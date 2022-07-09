@@ -59,7 +59,7 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -124,26 +124,29 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="general-work-list">
             <li class="work-list">
-              <img
+              <div class="work-overlay"><img
                 src="./images/img_1.jpg"
                 alt="Человек занимается кодированием будущего
               приложения"
                 width="370"
               />
+              <p class="work-text">Десктопные приложения</p></div>
             </li>
             <li class="work-list">
-              <img
+              <div class="work-overlay"><img
                 src="./images/img_2.jpg"
                 alt="Дизайнер выбирает оптимальный дизайн и оценивает его качество на девайсе"
                 width="370"
               />
+              <p class="work-text">Мобильные приложения</p></div>
             </li>
             <li class="work-list">
-              <img
+              <div class="work-overlay"><img
                 src="./images/img_3.jpg"
                 alt="Графический дизайнер выбирает цвет из цветовой палитры"
                 width="370"
               />
+              <p class="work-text">Дизайнерские решения</p></div>
             </li>
           </ul>
         </div>
@@ -381,7 +384,8 @@
             <li class="contacts-list">
               <a class="contacts-link" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
-          </ul></div>
+          </ul>
+        </div>
         </address>
               <div class="social">
         <h2 class="social-title">присоединяйтесь</h2>
@@ -411,5 +415,17 @@
       </div>
 
     </footer>
+
+    <div data-modal class="backdrop is-hidden" >
+      <div class="modal">
+        <button data-modal-close type="button" class="button-close" > 
+          <svg width="18px" height="18px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
